@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>goscore</title>
+	</head>
+	<body>
+		{.repeated section @}
+		<p>
+			{P1} ({P1score}) vs. {P2} ({P2score})
+		</p>
+		{.end}
+		<form method="POST" action="/games">
+			<h1>Post Game</h1>
+			<label for="player1">
+				<input type="text" name="player1">
+				<input type="text" name="Player1score">
+				<br>
+			<label for="player2">
+				<input type="text" name="player2">
+				<input type="text" name="Player2score">
+				<br>
+	
+			<input type="submit">
+		</form>
+
+	</body>
+</html>
